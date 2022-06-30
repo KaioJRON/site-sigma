@@ -12,14 +12,18 @@ echo $id;
     <div class = " row " >
         <div class = "col">
             <h1><?php echo $produtos [$id] ['nome']; ?></h1>
-            <img src="./content/<?php echo $produtos [$id] ['imagem']; ?>">
+            <br><img src="./content/<?php echo $produtos [$id] ['imagem']; ?>" width="400px" height="400px"><br/>
             <p><?php echo $produtos [$id] ['descricao']; ?></p>
-            <h4><?php echo $produtos [$id] ['preço']; ?></h4>
+            <br><h4><?php echo $produtos [$id] ['preço']; ?></h4><br/>
         </div>
     </div>
     <div class="row">
-        <div class="col">Voltar</div>
-        <div class="col">Comprar</div>
+        <div class="queijo">
+            <a href="produtos.php" class="btn btn-outline-dark">VOLTAR</a>
+        </div>
+        <div class ="kaio">
+            <a href="#" class="btn btn-outline-success">COMPRAR</a>
+        </div>
     </div>
 </div>
 <?php

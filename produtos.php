@@ -22,7 +22,7 @@ foreach ($produtos as $key => $value ) {
     <p class="card-text"><?php echo $value ['descricao'];?></p>
     <p class="card-text"><?php echo $value ['preço'];?></p>
 
-    <a href="produto-detalhe.php?id=<?php echo $key?>" class="btn btn-primary"></a>
+    <a href="produto-detalhe.php?id=<?php echo $key?>" class="btn btn-outline-dark">DETALHES</a>
   </div>
 
 

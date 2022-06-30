@@ -7,7 +7,7 @@ include_once './includes/_header.php';
 
 
 <div class="container">
-<h2 class="clear">Promoção</h2>
+<h2 class="clear">Promoção Semanal</h2>
     <div class="row">
 
 
@@ -23,7 +23,7 @@ for ($i=0; $i < 3; $i++) {
     <p class="card-text"><?php echo $produtos [$i] ['descricao'];?></p>
     <p class="card-text"><?php echo $produtos [$i] ['preço'];?></p>
 
-    <a href="produto-detalhe.php?id=<?php echo $i?>&tipo=promocao" class="btn btn-primary"></a>
+    <a href="produto-detalhe.php?id=<?php echo $i?>&tipo=promocao" class="btn btn-outline-dark">DESTALHES</a>
   </div>
 
 
