@@ -8,13 +8,23 @@ include_once './includes/_header.php';
 
 
 <div class="container">
-<h2 class="clear">Promoção Semanal</h2>
-    <div class="row">
+    <h2>Promoção</h2>
+    <div class="row mt-5">
+        <?php
+        // crio uma variavel que contem SQL executado
+        $sql = "SELECT * FROM categorias WHERE Ativo = 1";
+        // executa o comando SQL
+        $exec = mysqli_query($conn,$sql);
+        // informar a quantidade de registros de dados 
+        $numProdutos = mysqli_num_rows($exec);
+        // percorre todos os dados extraidos do banco
+        while ( $dados = mysqli_fetch_assoc($exec) ) {
+            echo '<h1>'.$dados['Nome'].'</h1>';
 
+        }
 
-<?php
-for ($i=0; $i < 3; $i++) {
-?>
+        for ($i=0; $i < 3; $i++) {
+        ?>
 
 
     <div class="card" style="width: 18rem;">
