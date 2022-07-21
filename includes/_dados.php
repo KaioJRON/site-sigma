@@ -1,7 +1,7 @@
 <?php
 
 $produtos = array(
-    0 => array('nome' =>'NFT Macaco 1°','preço' => 'O valor é de: 2000,00 R$', 'descricao'=>'NFT macaco','imagem'=>'macaco_branco.png'),
+    0 => array('nome' =>'NFT Macaco 1°','preço' => 'O valor é de: 2000,50 R$', 'descricao'=>'NFT macaco','imagem'=>'macaco_branco.png'),
     1 => array('nome' =>'NFT Macaco 2°','preço' => 'O valor é de: 1050,00 R$', 'descricao'=>'NFT macaco','imagem'=>'macaco_lazer.png'),
     2 => array('nome' =>'NFT Macaco 3°','preço' => 'O valor é de: 1500,00 R$', 'descricao'=>'NFT macaco','imagem'=>'Eminem-NFT.webp'),
     3 => array('nome' =>'NFT Macaco 4°','preço' => 'O valor é de: 2300,00 R$', 'descricao'=>'NFT macaco','imagem'=>'aa4.png'),
