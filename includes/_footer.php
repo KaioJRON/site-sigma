@@ -1,11 +1,27 @@
 </main>
 
-
+<div class="footer-basic">
 <footer>
+<div class="social">
+    <a href="#"><i class="icon ion-social-instagram"></i></a>
+    <a href="#"><i class="icon ion-social-snapchat"></i></a>
+    <a href="#"><i class="icon ion-social-twitter"></i></a>
+    <a href="#"><i class="icon ion-social-facebook"></i></a>
+</div>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.php">Home</a></li>
+        <li class="list-inline-item"><a href="produtos.php">Produtos</a></li>
+        <li class="list-inline-item"><a href="contato.php">Contato</a></li>
+        <li class="list-inline-item"><a href="#">Termos</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+    </ul>
+        <p class="copyright">Company Name © 2018</p>
 
 </footer>
 
-
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -23,7 +39,3 @@
 -->
 </body>
 </html>
-<?php
-// fechar a conexao com banco de dados
-mysqli_close($conn);
-?>

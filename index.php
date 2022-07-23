@@ -6,13 +6,17 @@ include_once './includes/_head.php';
 include_once './includes/_header.php';
 ?>
 
+<br>
+<br>
+<br>
+<br>
 
 <div class="container">
-    <h2>Promoção</h2>
+    <h2>Promoção Semanal</h2>
     <div class="row mt-5">
         <?php
         // crio uma variavel que contem SQL executado
-        $sql = "SELECT * FROM produtos WHERE Ativo = 1 ORDER BY RAND() LIMIT 3";
+        $sql = "SELECT * FROM produtos WHERE Ativo = 1 ORDER BY RAND() LIMIT 6";
         // executa o comando SQL
         $exec = mysqli_query($conn,$sql);
         // informar a quantidade de registros de dados 
@@ -22,14 +26,14 @@ include_once './includes/_header.php';
         ?>
 
 
-    <div class="card" style="width: 18rem;">
-  <img src="./content/<?php echo $dados['Imagem'] ; ?>" class="card-img-top" alt="...">
+    <div class="card-12345" style="width: 18rem;">
+  <img src="./content/<?php echo $dados['Imagem'] ; ?>" class="cleber" alt="...">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $dados['Nome'];?></h5>
-    <p class="card-text"><?php echo $dados['Descricao'];?></p>
-    <p class="card-text"><?php echo $dados['ProdutoID'];?></p>
+    <h5 class="texto"><?php echo $dados['Nome'];?></h5>
+    <p class="texto"><?php echo $dados['Descricao'];?></p>
+    <p class="texto"><?php echo $dados['CategoriaID'];?></p>
 
-    <a href="produto-detalhe.php?id=<?php echo $echo["ProdutoID"]?>&tipo=promocao" class="btn btn-outline-dark">DESTALHES</a>
+    <a href="produto-detalhe.php?id=<?php echo $echo["CategoriaID"]?>&tipo=promocao" class="btn btn-outline-light"><strong>DESTALHES</strong></a>
   </div>
 
 
@@ -40,8 +44,12 @@ include_once './includes/_header.php';
 ?>
 
 
-    </div>
+  </div>
 </div>
+<br>
+<br>
+<br>
+<br>
 
 <?php
 // include do footer
